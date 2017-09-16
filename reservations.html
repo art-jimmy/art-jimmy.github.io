@@ -17,116 +17,23 @@
 	    <div class="col-12">
 		    <h1 class="warning">Website Under Test</h1>
 		    <h2>Reservations</h2>
-			  <p>Pick-Up Date<br />
-			    <select name="months">
-			      <option value="jan">JAN</option>
-				  <option value="feb">FEB</option>
-				  <option value="mar">MAR</option>
-				  <option value="apr">APR</option>
-				  <option value="may">MAY</option>
-				  <option value="jun">JUN</option>
-				  <option value="jul">JUL</option>
-				  <option value="aug">AUG</option>
-				  <option value="sep">SEP</option>
-				  <option value="oct">OCT</option>
-				  <option value="nov">NOV</option>
-				  <option value="dec">DEC</option>				  				 				  
-			    </select>
-			    <select name="dates">
-			      <option value="1">1</option>
-				  <option value="2">2</option>
-				  <option value="3">3</option>				  
-				  <option value="4">4</option>
-				  <option value="5">5</option>
-				  <option value="6">6</option>
-				  <option value="7">7</option>
-				  <option value="8">8</option>
-				  <option value="9">9</option>
-				  <option value="10">10</option>
-				  <option value="11">11</option>
-				  <option value="12">12</option>
-				  <option value="13">13</option>
-				  <option value="14">14</option>
-				  <option value="15">15</option>
-				  <option value="16">16</option>
-				  <option value="17">17</option>
-				  <option value="18">18</option>
-				  <option value="19">19</option>
-				  <option value="20">20</option>
-				  <option value="21">21</option>
-				  <option value="22">22</option>
-				  <option value="23">23</option>
-				  <option value="24">24</option>
-				  <option value="25">25</option>
-				  <option value="26">26</option>
-				  <option value="27">27</option>
-				  <option value="28">28</option>
-				  <option value="29">29</option>
-				  <option value="30">30</option>
-				  <option value="31">31</option>				  
-			    </select>
-			    <select name="years">
-			      <option value="2017">2017</option>
-				  <option value="2018">2018</option>			  
-			    </select>			  			  
-			  </p>
-
-			  <p>Pick-Up Time<br />
-			    <select name="hours">
-			      <option value="12">12</option>
-				  <option value="1">1</option>
-				  <option value="2">2</option>
-				  <option value="3">3</option>
-				  <option value="4">4</option>
-				  <option value="5">5</option>
-				  <option value="6">6</option>
-				  <option value="7">7</option>
-				  <option value="8">8</option>
-				  <option value="9">9</option>
-				  <option value="10">10</option>
-				  <option value="11">11</option>				  				  
-			    </select> : 
-			    <select name="mins">
-			      <option value="00">00</option>
-				  <option value="15">15</option>
-				  <option value="30">30</option>
-				  <option value="45">45</option>				  
-			    </select>
-			    <select name="ampm">
-			      <option value="am">AM</option>
-				  <option value="pm">PM</option>			  
-			    </select>			  			  
-			  </p>			  
-
+            
 		  <p>
 		    <label>Pick-Up Location</label><br />
-			<input id="pickup" placeholder="Enter pick-up location" type="text"></input><br /> 	
+			<input id="pickup" placeholder="Enter pick-up address" type="text" /><br /> 	
 		  </p>
 		  <p>
 		    <label>Drop-Off Location</label><br />
-			<input id="dropoff" placeholder="Enter drop-off location" type="text"></input><br />
-			
+			<input id="dropoff" placeholder="Enter drop-off address" type="text" /><br />			
 		  </p>
 		  <p>Number of Passengers<br />
-		  <select name="passengers">
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>			
+		    <select id="passengers">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>			
 		  </select>
-		  <p>
-		    <label>Telephone no#</label><br />
-			<input type="text" name="phone" maxlength="20" /><br />
-		  </p>		  
-		  <p>
-		    <label>Name</label><br />
-			<input type="text" name="username" maxlength="30" /><br />
-		  </p>		  
-		  <p>
-		    <label>Email</label><br />
-			<input type="text" name="email" maxlength="30" /><br />
-		  </p>		  
-		  		  		  
+          </p>		  		  		  
 		<input type="submit" id="submit" class="btn btn-primary btn-block" value="Calculate Fare" />
 			  	
 		</div><!-- end of div .col-6 -->
@@ -134,11 +41,17 @@
 	  
 	  <div class="row">
 		<div class="col-12">
-		  <h2 id="fare">Fare Details</h2>
+		  <h2 id="charge">Fare Details</h2>
 
 		  <div id="directions-panel">
 		  </div>
-		  		  
+            <p id="bookNowMessage">            
+            </p>            
+            <p id="bookNowButton">
+                Please click the <b>book now</b> button<br />
+                to book My Car Travel using Appointlet and Paypal.<br />
+              <a id="bookNowLink" href= 'https://mycartravel.appointlet.com' target='_blank'><img src='https://www.appointletcdn.com/loader/buttons/008DBD.png' alt='Book Now Appointlet'></a>
+            </p>            		  		  
 		</div>	  	  
 	  </div><!-- end of div .row -->
 	  
